@@ -1,11 +1,14 @@
 import java.io.File;
+import java.sql.Array;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
 public class main {
 
-  private static Map<Integer, Integer> booksValue = new HashMap<>();
+  private Array books = new ArrayList<Book>();
 
   public static void main(String[] args) {
     Scanner scanner;
