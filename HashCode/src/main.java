@@ -33,7 +33,7 @@ public class main {
       libraries[i] = new Library(scanner.nextInt(),
           scanner.nextInt(), scanner.nextInt());
       for (int j = 0; j < libraries[i].getNumberOfBooks(); j++) {
-        libraries[i].books[j] = scanner.nextInt();
+        libraries[i].books.add(booksValue.get(j));
       }
     }
   }

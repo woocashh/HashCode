@@ -1,15 +1,17 @@
+import java.util.PriorityQueue;
+
 public class Library {
 
   private int numberOfBooks;
   private int signup;
   private int booksPerDay;
-  public int[] books;
+  public PriorityQueue<Book> books;
 
   Library(int numberOfBooks, int signup, int booksPerDay) {
     this.numberOfBooks = numberOfBooks;
     this.signup = signup;
     this.booksPerDay = booksPerDay;
-    books = new int[numberOfBooks];
+    books = new PriorityQueue<>();
   }
 
   public int getBooksPerDay() {

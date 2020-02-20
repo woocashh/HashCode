@@ -1,4 +1,4 @@
-public class Book {
+public class Book implements Comparable<Book>{
 
 
   private int score;
@@ -17,5 +17,13 @@ public class Book {
     return taken;
   }
 
+  public int getScore() {
+    return score;
+  }
+
+  @Override
+  public int compareTo(Book other){
+    return Integer.compare(score, other.score);
+  }
 
 }
