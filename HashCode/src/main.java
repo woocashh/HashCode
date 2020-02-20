@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class main {
 
-  private Array books = new ArrayList<Book>();
+  private static Map<Integer, Book> booksValue = new HashMap<>();
 
   public static void main(String[] args) {
     Scanner scanner;
@@ -24,7 +24,7 @@ public class main {
     int days = scanner.nextInt();
 
     for (int i = 0; i < numberOfBooks; i++) {
-      booksValue.put(i, scanner.nextInt());
+      booksValue.put(i, new Book(scanner.nextInt()));
     }
 
     Library[] libraries = new Library[numberOfLibraries];
