@@ -1,6 +1,5 @@
 import java.io.File;
 import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -12,7 +11,7 @@ public class main {
     Scanner scanner;
     try {
       scanner = new Scanner(new File(args[0]));
-    } catch (Exception e){
+    } catch (Exception e) {
       scanner = new Scanner(System.in);
     }
 
@@ -20,14 +19,18 @@ public class main {
     int numberOfLibraries = scanner.nextInt();
     int days = scanner.nextInt();
 
-    for (int i = 0; i < numberOfBooks; i++){
+    for (int i = 0; i < numberOfBooks; i++) {
       booksValue.put(i, scanner.nextInt());
     }
 
     Library[] libraries = new Library[numberOfLibraries];
 
-    for (int i = 0; i < numberOfLibraries; i++){
-      libraries[i] = new Library()
+    for (int i = 0; i < numberOfLibraries; i++) {
+      libraries[i] = new Library(scanner.nextInt(),
+          scanner.nextInt(), scanner.nextInt());
+      for (int j = 0; j < libraries[i].getNumberOfBooks(); j++) {
+        libraries[i].books[j] = scanner.nextInt();
+      }
     }
 
 
