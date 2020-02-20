@@ -13,6 +13,7 @@ public class main {
       scanner = new Scanner(new File(args[0]));
     } catch (Exception e) {
       scanner = new Scanner(System.in);
+      System.out.println("not file found, " + e);
     }
 
     int numberOfBooks = scanner.nextInt();
