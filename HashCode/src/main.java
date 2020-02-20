@@ -33,8 +33,6 @@ public class main {
         libraries[i].books[j] = scanner.nextInt();
       }
     }
-
-
   }
 
 }

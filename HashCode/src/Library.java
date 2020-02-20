@@ -23,4 +23,22 @@ public class Library {
   public int getSignup() {
     return signup;
   }
+
+  @Override
+  public String toString() {
+    StringBuilder strbuilder = new StringBuilder();
+    strbuilder.append(numberOfBooks);
+    strbuilder.append(" ");
+    strbuilder.append(signup);
+    strbuilder.append(" ");
+    strbuilder.append(booksPerDay);
+    strbuilder.append(" ");
+    strbuilder.append("\n");
+    for (int i =0; i< numberOfBooks; i++){
+      strbuilder.append(books[i]);
+      strbuilder.append(" ");
+    }
+
+    return strbuilder.toString();
+  }
 }
