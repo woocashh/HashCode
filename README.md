@@ -5,4 +5,6 @@ The problem involved desigining a scheduling system for the Google Books utility
 
 We have used Java for we have done it as one of the academic modules, so the language was familiar to us all. The implementation is based on a simple heuristic, based on initial perception of the problem, rather than in depth analysis. Enjoy! 
 
-<img class="center" src="Google-Hash-Code.jpg" alt="HashCode">
+<p align="center">
+  <img src="Google-Hash-Code.jpg" alt="HashCode">
+</p>
